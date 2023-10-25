@@ -1,0 +1,121 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{rotating}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsfonts,latexsym,cancel}
+\usepackage[x11names,table]{xcolor}
+\usepackage{subfigure}
+
+\renewcommand{\listtablename}{Índice de tablas}
+\AtBeginDocument{\renewcommand\tablename{Tabla}}
+
+\title{Ejercicio 2 Tablas y Figuras}
+\author{Sergio Leandro Ramos Villena}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Configuración}
+	\begin{itemize}
+		\item Título, autor y fecha
+		\item Establecer el tamaño de la página a 18x21cm con márgen a los costados de 2cm.
+		\item Renombrar \textbf{Cuadros} por \textbf{Tablas} colocando el siguiente comando en el preámbulo (la parte antes del begin document).
+			\begin{verbatim}
+
+			\renewcommand{\listtablename}{´Indice de tablas}
+			\AtBeginDocument{\renewcommand\tablename{Tabla}}
+
+			\end{verbatim}
+		\item Utilizar el paquete \textit{hyperref}
+	\end{itemize}
+\pagebreak
+\section{Tablas}
+ \begin{itemize}
+ 
+	\item Tabla \ref{table:columnas}: Coloque las siguientes ecuaciones en una tabla con dos columnas:
+		\begin{table}[h!]
+		\centering
+			\begin{tabular}{|c|c|}\hline
+	
+
+			$\displaystyle \frac{1}{1+\frac{1}{1+\frac{1}{1+\frac{1}{1+...}}}}$ & $\displaystyle \sum _{i}^{n-1}\sum _{j=i+1}^{n} f(i,j)e^{-\pi}$ \\\hline
+
+			\end{tabular}	
+		\caption{tabla de dos columnas}\label{table:columnas}
+		\end{table}
+	
+	\item Tabla \ref{table:x}: Utilice el método de cellcolor para dibujar una X en una tabla de tama˜no de 7x7.
+		\begin{table}[h!]
+		\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+			\cellcolor[gray]{0} &&&&&&\cellcolor[gray]{0}\\\hline
+			&\cellcolor[gray]{0}&&&&\cellcolor[gray]{0}&\\\hline
+			&&\cellcolor[gray]{0}&&\cellcolor[gray]{0}&&\\\hline
+			&&&\cellcolor[gray]{0}&&&\\\hline
+			&&\cellcolor[gray]{0}&&\cellcolor[gray]{0}&&\\\hline
+			&\cellcolor[gray]{0}&&&&\cellcolor[gray]{0}&\\\hline
+			\cellcolor[gray]{0}&&&&&&\cellcolor[gray]{0}\\\hline
+			\end{tabular}	
+		\caption{X en una tabla de tama˜no de 7x7.}\label{table:x}
+		\end{table}
+	
+	\item Coloque la siguiente Tabla \ref{table:semana}:
+		\begin{table}[h!]
+		\centering
+			\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+				&\multicolumn{6}{c}{Dias de la semana}&\\\hline
+				&Lunes&Martes&Miércoles&Jueves&Viernes&Sábado&Domingo\\\hline
+				\begin{sideways}Presente\end{sideways}&Si&No&Si&No&Si&No&No \\\hline
+			\end{tabular}	
+		\caption{Asistencias del día de la semana.}\label{table:semana}
+		\end{table}
+	\item Coloque las referencias correctas en donde aparece el símbolo de interrogación.Y coloque a las tablas un caption
+en la parte inferior.
+
+ \end{itemize}
+\pagebreak
+\section{Figuras}
+	\begin{enumerate}
+		\item En la Figura \ref{figure:centro}, logotipo de la UCSP con un ancho de 5cm. y centralizado.
+			\begin{figure}[h!]
+				\begin{center}
+				\caption{Logotipo en el centro}\label{figure:centro}
+					\includegraphics[width =5cm]{D:/Descargas/Logotipo.png}
+
+				\end{center}
+			\end{figure}
+	\item En la Figura \ref{figure:derecha},, logotipo de la UCSP con un ancho de 5cm y una altura de 8cm y alineado a la derecha de la
+página.	
+
+		\begin{figure}[h!]
+			\parbox{13cm}{.}\parbox{5cm}{ \caption{logotipo a la derecha}\label{figure:derecha}
+				\includegraphics[width =5cm,height =8cm]{D:/Descargas/Logotipo.png}}
+
+
+		\end{figure}
+	\item En la Figura  \ref{table:doscelulares}, colocará dos gráficos juntos (a) y (b). El (a) será la imágen de un Motorola G6 de 4cm de ancho.
+El (b) sería la imágen de un samsung galaxy S10 con los mismos 4cm de ancho en la imagen.
+
+\textbf{Abajo}
+
+		\begin{figure}[h!]
+		\centering
+			\subfigure[Motorola G6]{\includegraphics[width =4cm]{D:/Descargas/motog6.png}}
+			\subfigure[Samsung galaxy S10]{\includegraphics[width =4cm]{D:/Descargas/Samsung S10.png}}
+
+
+		\caption{Celulares Motorola y Samsung.}\label{table:doscelulares}
+
+		\end{figure}
+	
+
+	\end{enumerate}
+
+\end{document}
