@@ -1,0 +1,80 @@
+\documentclass[11pt]{beamer}
+\usetheme{Berkeley}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{biblatex}
+\usepackage{lipsum}
+\author{Sergio Leandro Ramos Villena}
+\title{Ejercicio 3 - Diapositivas Latex}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{}
+\logo{\includegraphics[height=1cm]{logo.jpg}}
+\institute{UCSP}
+%\date{}
+%\subject{Metología} 
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+	\tableofcontents
+\end{frame}
+\section{Introduction}
+	\begin{frame}{Introducción}
+		\lipsum[1-1]
+	\end{frame}
+ 
+\section{Tablas}
+	\begin{frame}{Uso de tablas}
+		\uncover<1>{Esta es una tabla de 3 x 3}
+		\uncover<2->{
+			\begin{tabular}{|c|c|c|}\hline
+				Uno & Dos & Tres \\ \hline
+				Cuatro & Cinco & Seis \\ \hline
+				Siete & Ocho & Nueve \\ \hline
+  			\end{tabular}
+  					}
+ 	\end{frame}
+\section{Figuras}
+	\begin{frame}{Uso de figuras}
+		\uncover<1->{
+			 Esta es una figura centralizada
+					}
+		 \uncover<2->{
+		 \begin{center}
+	     \includegraphics[width=4cm]{logo.jpg}
+		 \end{center}
+						}
+	\end{frame}
+\section{Enumeraciones}
+	\begin{frame}{Uso de enumerate}
+	    Uso de enumeraciones
+	   \begin{enumerate}
+       \item<1-> Uno
+       \item<2-> Dos
+       \item<3-> Tres
+       \item<4-> Cuatro
+       \item<5-> Cinco
+	   \end{enumerate}
+	\end{frame}
+\section{Referencias}
+\begin{frame}{Referencias}[fragile]
+	Se utilizan 3 referencias
+    \begin{itemize}
+        \item Referencia 1: \cite{guang12}
+        \item Referencia 2: \cite{juan15}
+        \item Referencia 3: \cite{ying11}
+    \end{itemize}
+\end{frame}
+\begin{frame}[fragile]
+    \begin{verbatim}
+        \bibliographystyle{apalike}
+        \bibliography{biblio.bib}
+    \end{verbatim}
+\end{frame}
+\end{document}

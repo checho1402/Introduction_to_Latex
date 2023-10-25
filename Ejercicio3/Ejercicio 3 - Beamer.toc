@@ -1,0 +1,12 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Tablas}{4}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Figuras}{6}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Enumeraciones}{8}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Referencias}{13}{0}{5}

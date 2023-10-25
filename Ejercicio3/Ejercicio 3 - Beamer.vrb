@@ -1,0 +1,4 @@
+\begin{verbatim}
+        \bibliographystyle{apalike}
+        \bibliography{biblio.bib}
+    \end{verbatim}
