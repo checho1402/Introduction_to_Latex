@@ -1,2 +1,2 @@
-# Introducción_a_Latex
-Este repositorio contiene algunos códigos utilizando Latex para construir documentos de texto, además se utilizó la herramienta Beamer.
+# introduction to latex
+This repository contains some code using Latex to build text documents, and the Beamer tool was also used.
